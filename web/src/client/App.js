@@ -1,12 +1,7 @@
 import React, { Component } from 'react';
 import './app.css';
 import Recorder from 'recorder-js';
-import axios from 'axios';
-
-const backend = axios.create({
-  baseUrl: './authenticate',
-  timeout: 10000
-});
+import Axios from 'axios';
 
 export default class App extends Component {
   constructor(props) {
@@ -44,14 +39,12 @@ export default class App extends Component {
     } else {
       recorder.stop()
         .then(({ blob }) => {
-          console.log(blob);
-          backend.post(blob, {
-            header: {
-              'Content-Type': 'multipart/form-data'
-            }
-          }).then((response) => {
-            console.log(response);
-          });
+          var data = new FormData();
+          data.append("blob", blob);
+          Axios.put('/authenticate', blob)
+            .then((res) => {
+              console.log(res);
+            });
         });
     }
   }
