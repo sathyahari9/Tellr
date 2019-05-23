@@ -7,7 +7,6 @@ const mongoose = require("mongoose");
 var User = require("./user-model");
 const app = express();
 const port = process.env.PORT || 8080;
-const os = require('os');
 
 const app = express();
 
