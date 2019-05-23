@@ -11,7 +11,7 @@ const s3 = new AWS.S3({
 
 module.exports.upload = (blob) => {
   let buf = new Buffer(blob, 'base64');
-  fs.writeFile('temp/test.wav', buf, (err) => {
+  fs.writeFile('tmp.wav', buf, (err) => {
     if(err) {
       console.log(err);
     } else {
@@ -19,13 +19,19 @@ module.exports.upload = (blob) => {
     }
   });
 
-  let keyName = uuid.v4();
-  let params = { Bucket: bucketName, Key: keyName, Body: blob }
-  s3.putObject(params, (err, data) => {
+  fs.readFile('tmp.wav', (err, data) => {
     if(err) {
       console.log(err);
     } else {
-      console.log("File upload to S3 successful!");
+      let keyName = uuid.v4();
+      let params = { Bucket: bucketName, Key: keyName, Body: data };
+      s3.putObject(params, (err, data) => {
+        if(err) {
+          console.log(err);
+        } else {
+          console.log("Upload to S3 successful!");
+        }
+      });
     }
   });
 };
