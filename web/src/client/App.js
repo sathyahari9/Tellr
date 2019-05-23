@@ -37,12 +37,12 @@ export default class App extends Component {
    reader.onload = function() {
      var dataUrl = reader.result;
      var base64 = dataUrl.split(',')[1];
-     cb(base64);
+     callback(base64);
    };
    reader.readAsDataURL(blob);
  }
 
-  handleRecord = () => {
+  handleRecord() {
     const { record, recorder } = this.state;
     if (record) {
       this.initRecorder((rec) => rec.start());
@@ -54,8 +54,7 @@ export default class App extends Component {
               .then((res) => {
                 console.log(res);
               });
-            );
-          }
+          });
         });
     }
   }

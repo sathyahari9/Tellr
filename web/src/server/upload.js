@@ -9,6 +9,9 @@ const s3 = new AWS.S3({
   secretAccessKey: 'EvmDDGLwhTwVw+g1bJJ5PKSYWZM/t3onDkb8cDOd'
 });
 
+/* Returns the file name upon successful upload
+ * URL: https://s3-us-east-1.amazonaws.com/code-input/{keyName}.wav
+*/
 module.exports.upload = (blob) => {
   let buf = new Buffer(blob, 'base64');
   fs.writeFile('tmp.wav', buf, (err) => {
@@ -23,13 +26,14 @@ module.exports.upload = (blob) => {
     if(err) {
       console.log(err);
     } else {
-      let keyName = uuid.v4();
+      let keyName = uuid.v4() + '.wav';
       let params = { Bucket: bucketName, Key: keyName, Body: data };
       s3.putObject(params, (err, data) => {
         if(err) {
           console.log(err);
         } else {
           console.log("Upload to S3 successful!");
+          return keyName;
         }
       });
     }
