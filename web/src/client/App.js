@@ -1,23 +1,45 @@
 import React, { Component } from 'react';
 import './app.css';
-import ReactImage from './react.png';
+import ReactMic from 'react-mic';
 
 export default class App extends Component {
-  state = { username: null };
+  constructor(props) {
+    super(props);
+    this.state = {
+      record: false
+    };
+    this.onStop = this.onStop.bind(this);
+    this.stopRecording = this.stopRecording.bind(this);
+    this.startRecording = this.startRecording.bind(this);
+  }
 
-  componentDidMount() {
-    fetch('/api/getUsername')
-      .then(res => res.json())
-      .then(user => this.setState({ username: user.username }));
+  onStop = (recorded) => {
+    console.log(recorded);
+  }
+
+  stopRecording = () => {
+    this.setState({
+      record: false
+    });
+  }
+
+  startRecording = () => {
+    this.setState({
+      record: true
+    });
   }
 
   render() {
-    const { username } = this.state;
+    const { record } = this.state;
     return (
-      <div>
-        {username ? <h1>{`Hello ${username}`}</h1> : <h1>Loading.. please wait!</h1>}
-        <img src={ReactImage} alt="react" />
-      </div>
+      <React.Fragment>
+        <ReactMic
+          record={record}
+          onStop={this.onStop}
+        />
+        <button onClick={this.startRecording} type="button" />
+        <button onClick={this.stopRecording} type="button" />
+      </React.Fragment>
     );
   }
 }
