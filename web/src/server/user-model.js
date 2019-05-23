@@ -6,11 +6,11 @@ const bcrypt = require("bcrypt");
 const saltRounds = 10;
 var UserSchema = new Schema({
   userId:   { type: String, required: true, unique: true },
-  password: { type: String, required: true },
   code:     { type: String, unique: true },
   amount:   { type: Number }
 });
 
+/*
 // Password hashing middleware
 UserSchema.pre("save", function(next) {
   var user = this;
@@ -29,5 +29,6 @@ UserSchema.pre("save", function(next) {
 UserSchema.methods.comparePassword = function(candidatePassword) {
   return bcrypt.compareSync(candidatePassword, this.password);
 };
+*/
 
 module.exports = mongoose.model("User", UserSchema);
