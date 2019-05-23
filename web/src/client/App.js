@@ -32,6 +32,16 @@ export default class App extends Component {
     this.setState({ record: !record }, this.handleRecord);
   }
 
+ blobToBase64(blob, callback) {
+   var reader = new FileReader();
+   reader.onload = function() {
+     var dataUrl = reader.result;
+     var base64 = dataUrl.split(',')[1];
+     cb(base64);
+   };
+   reader.readAsDataURL(blob);
+ }
+
   handleRecord = () => {
     const { record, recorder } = this.state;
     if (record) {
@@ -39,12 +49,13 @@ export default class App extends Component {
     } else {
       recorder.stop()
         .then(({ blob }) => {
-          var data = new FormData();
-          data.append("blob", blob);
-          Axios.put('/authenticate', blob)
-            .then((res) => {
-              console.log(res);
-            });
+          blobToBase64(blob, (base64) => {
+            Axios.put('/authenticate', base64)
+              .then((res) => {
+                console.log(res);
+              });
+            );
+          }
         });
     }
   }
