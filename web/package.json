@@ -13,6 +13,7 @@
   "author": "Sandeep Raveesh",
   "license": "ISC",
   "dependencies": {
+    "aws-sdk": "^2.461.0",
     "axios": "^0.18.0",
     "babel-polyfill": "^6.26.0",
     "bcrypt": "^3.0.6",
@@ -24,7 +25,8 @@
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "recorder-js": "^1.0.7",
-    "request": "^2.88.0"
+    "request": "^2.88.0",
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",

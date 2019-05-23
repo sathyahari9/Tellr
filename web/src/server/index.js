@@ -4,6 +4,7 @@ const querystring = require("querystring");
 const request = require("request");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
+
 var User = require("./user-model");
 
 const app = express();
@@ -23,6 +24,7 @@ db.on("error", console.error.bind(console, "Connection error:"));
 
 // Submit voice file, authenticate, and complete
 app.post("/authenticate", (req, res) => {
+  
 });
 
 app.listen(port, () => console.log(`Listening on port ${port}!`));
