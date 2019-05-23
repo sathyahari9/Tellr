@@ -5,10 +5,9 @@ const request = require("request");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 var User = require("./user-model");
-const app = express();
-const port = process.env.PORT || 8080;
 
 const app = express();
+const port = process.env.PORT || 8080;
 
 app.use(express.json());
 app.use(express.static('dist'));
@@ -26,4 +25,4 @@ db.on("error", console.error.bind(console, "Connection error:"));
 app.post("/authenticate", (req, res) => {
 });
 
-app.listen(port || () => console.log(`Listening on port ${port}!`));
+app.listen(port, () => console.log(`Listening on port ${port}!`));
