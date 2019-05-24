@@ -1,0 +1,250 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:2:1-50:12
+INJECTED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:2:1-50:12
+INJECTED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:2:1-50:12
+INJECTED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:2:1-50:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/523c0e112114d236922bfb27a238bd40/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/54a6589ddd1f89e83935ea4686478dee/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.gms:play-services-maps:11.0.4] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/41de663467b093484ab73a5a3d4894bb/AndroidManifest.xml:16:1-25:12
+MERGED from [com.google.android.gms:play-services-base:11.0.4] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/baf7f110f2988dc2ff111425c44d54f9/AndroidManifest.xml:16:1-21:12
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/3230449f7fbd24e3c5d9de8acb5392cf/AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/1ec9a005c27c511a2d2679533b7547d5/AndroidManifest.xml:16:1-23:12
+MERGED from [com.android.support:support-v4:25.2.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/66c0d68a29957dd99058a160bcad6d80/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/501fecc6f3e117b34ea28d74a0c7e153/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/e79648f5beadd20f1ea51556c58ce463/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/9c63996610ae9c5feee6a78c3934a96b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/22cd43be7b16f269ce825332cfcea08e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/310dc029897b410db909685a3b73f5ab/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/c33bfcf1db12b9992f31a06d9c8132d7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/e0b70cabf1e57a7f2430d603c6d7047a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/0f28d6fe02fad9b6dfc720c7f873121f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/1a26c6c6fbcd6b18a2f56b68b19acdac/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/ae4ad6f2d2850957a86316b6b5592ec2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/2c7005b7a184e1bddf53f0aad5dd898d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/69fa681185317bda625b3acf04b982ce/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/70bbb9222021263b5bc99487b62eadb4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:25.2.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/499603f3344df46e405663f897c2676c/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/0323e300b9b6bb9ac6c326f193d30bbd/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/08ed0a16dde2cc6c2d9f5b9963dd0d0d/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/4999f073c2c102eb752de121098d9934/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/e2298a61f61375e482af9ff88066fd5d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/8d6e798857d5ea1d396cf2a46853d098/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/3782343881730c5fd7f1e79b376da2c5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/168d6bd9fc83c10e6566a8981622acb9/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/b04d93ddcf2dea0d31c7bc32ea6013cc/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/4d39ea077fde9dc49591492c703c03f1/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/48e13ad1b6ae0d4c55eb5f8387a1ec6c/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/dec529aaab9eb3249d1c58728e9dbb89/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/5591078996a21396c3619bc4b468d8c1/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:2:1-50:12
+INJECTED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:2:1-50:12
+INJECTED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:2:1-50:12
+	package
+		ADDED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:4:5-43
+		INJECTED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml
+		ADDED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:2:1-50:12
+		INJECTED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml
+		ADDED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:2:1-50:12
+		INJECTED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-maps:11.0.4] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/41de663467b093484ab73a5a3d4894bb/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-maps:11.0.4] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/41de663467b093484ab73a5a3d4894bb/AndroidManifest.xml:20:5-66
+	android:name
+		ADDED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:11:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:12:5-79
+MERGED from [com.google.android.gms:play-services-maps:11.0.4] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/41de663467b093484ab73a5a3d4894bb/AndroidManifest.xml:19:5-78
+MERGED from [com.google.android.gms:play-services-maps:11.0.4] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/41de663467b093484ab73a5a3d4894bb/AndroidManifest.xml:19:5-78
+	android:name
+		ADDED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:12:22-76
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:13:5-79
+	android:name
+		ADDED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:13:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:14:5-81
+	android:name
+		ADDED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:14:22-78
+application
+ADDED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:16:5-48:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/54a6589ddd1f89e83935ea4686478dee/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/54a6589ddd1f89e83935ea4686478dee/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-maps:11.0.4] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/41de663467b093484ab73a5a3d4894bb/AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-maps:11.0.4] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/41de663467b093484ab73a5a3d4894bb/AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-base:11.0.4] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/baf7f110f2988dc2ff111425c44d54f9/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-base:11.0.4] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/baf7f110f2988dc2ff111425c44d54f9/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/3230449f7fbd24e3c5d9de8acb5392cf/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/3230449f7fbd24e3c5d9de8acb5392cf/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/1ec9a005c27c511a2d2679533b7547d5/AndroidManifest.xml:19:5-21:19
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/1ec9a005c27c511a2d2679533b7547d5/AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:25.2.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/66c0d68a29957dd99058a160bcad6d80/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.2.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/66c0d68a29957dd99058a160bcad6d80/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.2.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/499603f3344df46e405663f897c2676c/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.2.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/499603f3344df46e405663f897c2676c/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/0323e300b9b6bb9ac6c326f193d30bbd/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/0323e300b9b6bb9ac6c326f193d30bbd/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/08ed0a16dde2cc6c2d9f5b9963dd0d0d/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/08ed0a16dde2cc6c2d9f5b9963dd0d0d/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/0323e300b9b6bb9ac6c326f193d30bbd/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:21:9-35
+	android:label
+		ADDED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:19:9-41
+	tools:ignore
+		ADDED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:23:9-48
+	android:roundIcon
+		ADDED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:20:9-54
+	android:icon
+		ADDED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:18:9-43
+	android:allowBackup
+		ADDED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:17:9-35
+	android:theme
+		ADDED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:22:9-40
+activity#com.hjordan6.disabledbanking.DisabilitySelection
+ADDED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:24:9-57
+	android:name
+		ADDED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:24:19-54
+activity#com.hjordan6.disabledbanking.Login
+ADDED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:25:9-43
+	android:name
+		ADDED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:25:19-40
+activity#com.hjordan6.disabledbanking.BlindSelection
+ADDED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:26:9-32:20
+	android:name
+		ADDED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:26:19-49
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:27:13-31:29
+action#android.intent.action.MAIN
+ADDED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:28:17-69
+	android:name
+		ADDED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:28:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:30:17-77
+	android:name
+		ADDED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:30:27-74
+meta-data#com.google.android.geo.API_KEY
+ADDED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:41:9-43:55
+	android:value
+		ADDED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:43:13-52
+	android:name
+		ADDED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:42:13-58
+activity#com.hjordan6.disabledbanking.ATM_Finder
+ADDED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:45:9-47:42
+	android:label
+		ADDED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:47:13-39
+	android:name
+		ADDED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml:46:13-39
+uses-sdk
+INJECTED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml
+INJECTED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/523c0e112114d236922bfb27a238bd40/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/523c0e112114d236922bfb27a238bd40/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/54a6589ddd1f89e83935ea4686478dee/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/54a6589ddd1f89e83935ea4686478dee/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-maps:11.0.4] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/41de663467b093484ab73a5a3d4894bb/AndroidManifest.xml:23:5-43
+MERGED from [com.google.android.gms:play-services-maps:11.0.4] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/41de663467b093484ab73a5a3d4894bb/AndroidManifest.xml:23:5-43
+MERGED from [com.google.android.gms:play-services-base:11.0.4] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/baf7f110f2988dc2ff111425c44d54f9/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-base:11.0.4] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/baf7f110f2988dc2ff111425c44d54f9/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/3230449f7fbd24e3c5d9de8acb5392cf/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/3230449f7fbd24e3c5d9de8acb5392cf/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/1ec9a005c27c511a2d2679533b7547d5/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/1ec9a005c27c511a2d2679533b7547d5/AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:support-v4:25.2.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/66c0d68a29957dd99058a160bcad6d80/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.2.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/66c0d68a29957dd99058a160bcad6d80/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/501fecc6f3e117b34ea28d74a0c7e153/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/501fecc6f3e117b34ea28d74a0c7e153/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/e79648f5beadd20f1ea51556c58ce463/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/e79648f5beadd20f1ea51556c58ce463/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/9c63996610ae9c5feee6a78c3934a96b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/9c63996610ae9c5feee6a78c3934a96b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/22cd43be7b16f269ce825332cfcea08e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/22cd43be7b16f269ce825332cfcea08e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/310dc029897b410db909685a3b73f5ab/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/310dc029897b410db909685a3b73f5ab/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/c33bfcf1db12b9992f31a06d9c8132d7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/c33bfcf1db12b9992f31a06d9c8132d7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/e0b70cabf1e57a7f2430d603c6d7047a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/e0b70cabf1e57a7f2430d603c6d7047a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/0f28d6fe02fad9b6dfc720c7f873121f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/0f28d6fe02fad9b6dfc720c7f873121f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/1a26c6c6fbcd6b18a2f56b68b19acdac/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/1a26c6c6fbcd6b18a2f56b68b19acdac/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/ae4ad6f2d2850957a86316b6b5592ec2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/ae4ad6f2d2850957a86316b6b5592ec2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/2c7005b7a184e1bddf53f0aad5dd898d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/2c7005b7a184e1bddf53f0aad5dd898d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/69fa681185317bda625b3acf04b982ce/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/69fa681185317bda625b3acf04b982ce/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/70bbb9222021263b5bc99487b62eadb4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/70bbb9222021263b5bc99487b62eadb4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:25.2.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/499603f3344df46e405663f897c2676c/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.2.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/499603f3344df46e405663f897c2676c/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-compat:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/0323e300b9b6bb9ac6c326f193d30bbd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/0323e300b9b6bb9ac6c326f193d30bbd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/08ed0a16dde2cc6c2d9f5b9963dd0d0d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/08ed0a16dde2cc6c2d9f5b9963dd0d0d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/4999f073c2c102eb752de121098d9934/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/4999f073c2c102eb752de121098d9934/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/e2298a61f61375e482af9ff88066fd5d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/e2298a61f61375e482af9ff88066fd5d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/8d6e798857d5ea1d396cf2a46853d098/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/8d6e798857d5ea1d396cf2a46853d098/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/3782343881730c5fd7f1e79b376da2c5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/3782343881730c5fd7f1e79b376da2c5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/168d6bd9fc83c10e6566a8981622acb9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/168d6bd9fc83c10e6566a8981622acb9/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/b04d93ddcf2dea0d31c7bc32ea6013cc/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/b04d93ddcf2dea0d31c7bc32ea6013cc/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/4d39ea077fde9dc49591492c703c03f1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/4d39ea077fde9dc49591492c703c03f1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/48e13ad1b6ae0d4c55eb5f8387a1ec6c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/48e13ad1b6ae0d4c55eb5f8387a1ec6c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/dec529aaab9eb3249d1c58728e9dbb89/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/dec529aaab9eb3249d1c58728e9dbb89/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/5591078996a21396c3619bc4b468d8c1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/5591078996a21396c3619bc4b468d8c1/AndroidManifest.xml:20:5-44
+INJECTED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml
+INJECTED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v4:25.2.0] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/66c0d68a29957dd99058a160bcad6d80/AndroidManifest.xml:23:9-51
+	android:targetSdkVersion
+		INJECTED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml
+		ADDED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml
+		ADDED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/sathyahari/Documents/GitHub/Tellr/mobile/DisabledBanking/app/src/main/AndroidManifest.xml
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:11.0.4] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/41de663467b093484ab73a5a3d4894bb/AndroidManifest.xml:21:5-77
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:11.0.4] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/41de663467b093484ab73a5a3d4894bb/AndroidManifest.xml:21:19-51
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:11.0.4] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/41de663467b093484ab73a5a3d4894bb/AndroidManifest.xml:21:52-75
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:11.0.4] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/baf7f110f2988dc2ff111425c44d54f9/AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:11.0.4] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/baf7f110f2988dc2ff111425c44d54f9/AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:11.0.4] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/baf7f110f2988dc2ff111425c44d54f9/AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:11.0.4] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/baf7f110f2988dc2ff111425c44d54f9/AndroidManifest.xml:19:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:11.0.4] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/1ec9a005c27c511a2d2679533b7547d5/AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:11.0.4] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/1ec9a005c27c511a2d2679533b7547d5/AndroidManifest.xml:20:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:11.0.4] /Users/sathyahari/.gradle/caches/transforms-2/files-2.1/1ec9a005c27c511a2d2679533b7547d5/AndroidManifest.xml:20:20-65
