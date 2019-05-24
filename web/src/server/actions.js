@@ -26,11 +26,9 @@ const transcribeService = new AWS.TranscribeService();
 */
 function upload(req, res) {
   var form = new multiparty.Form();
-  console.log("TESTING123");
   form.parse(req, (err, fields, files) => {
-    let buf = Buffer.from(fields.data, 'base64');
-    res.write(buf);
-    fs.writeFile('tmp.wav', buf, 'base64', (err) => {
+    let base64wav = fields.data[0].split(';base64,').pop();
+    fs.writeFile('tmp.wav', base64wav, 'base64', (err) => {
       if(err) {
         console.log("File too large to write");
         console.log(err);
@@ -42,7 +40,7 @@ function upload(req, res) {
 
   fs.readFile('tmp.wav', (err, data) => {
     if(err) {
-      console.log("wtf file too large\n");
+      console.log("File too large\n");
       console.log(err);
     } else {
       let keyName = uuid.v4() + '.wav';

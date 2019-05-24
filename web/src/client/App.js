@@ -32,6 +32,7 @@ export default class App extends Component {
       default:
         return (
           <React.Fragment>
+            <Voice />
             <Navbar
               homeOpen = {this.goToHome}
               appOpen = {this.goToApp}

@@ -52,6 +52,11 @@ export default class Voice extends Component {
           this.blobToBase64(blob, (base64) => {
             const formData = new FormData();
             formData.append('data', base64);
+
+            /*for (var pair of formData.entries()) {
+              console.log(pair[0]+ ', ' + pair[1] + '\n');
+            }*/
+
             Axios.post('/authenticate', formData, {
               headers: {
                 'Content-Type': 'multipart/form-data'
@@ -70,7 +75,7 @@ export default class Voice extends Component {
     const { record, ready } = this.state;
     return (
       <React.Fragment>
-        <button type="button" onClick={this.toggleRecord} />
+        <button type="button" onClick={this.toggleRecord}>Speak</button>
         {ready || <h1>Not ready</h1>}
         {record ? (
           <h1>Recording</h1>
