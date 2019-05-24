@@ -26,13 +26,7 @@ export default class App extends Component {
     switch(this.state.view) {
       case "app":
         return (
-          <React.Fragment>
-            <Navbar
-              homeOpen = {this.goToHome}
-              appOpen = {this.goToApp}
-            />
-            <Teller />
-          </React.Fragment>
+          <Teller />
         );
       default:
         return (
