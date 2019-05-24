@@ -5,6 +5,7 @@ import Axios from 'axios';
 import mic from './assets/mic.png';
 import { Heading } from 'react-bulma-components';
 import 'react-bulma-components/dist/react-bulma-components.min.css';
+import SpeechToText from 'speech-to-text';
 
 export default class Voice extends Component {
   constructor(props) {
@@ -12,7 +13,8 @@ export default class Voice extends Component {
     this.state = {
       ready: false,
       record: false,
-      recorder: false
+      recorder: false,
+      interimText: ""
     };
     this.initRecorder = this.initRecorder.bind(this);
     this.toggleRecord = this.toggleRecord.bind(this);
@@ -36,41 +38,47 @@ export default class Voice extends Component {
     this.setState({ record: !record }, this.handleRecord);
   }
 
- blobToBase64(blob, callback) {
-   var reader = new FileReader();
-   reader.readAsDataURL(blob);
-   reader.onloadend = function() {
-     let base64 = reader.result;
-     callback(base64);
-   }
- }
+  blobToBase64(blob, callback) {
+    var reader = new FileReader();
+    reader.readAsDataURL(blob);
+    reader.onloadend = function () {
+      let base64 = reader.result;
+      callback(base64);
+    }
+  }
 
   handleRecord() {
-    const { record, recorder } = this.state;
-    if (record) {
-      this.initRecorder((rec) => rec.start());
+    if (this.state.record) {
+      this.listener.startListening()
     } else {
-      recorder.stop()
-        .then(({ blob }) => {
-          this.blobToBase64(blob, (base64) => {
-            const formData = new FormData();
-            formData.append('data', base64);
+      this.listener.stopListening();
+      let code = this.interimText.filter((char) => char !== ' ');
+      
+    }
+  }
 
-            /*for (var pair of formData.entries()) {
-              console.log(pair[0]+ ', ' + pair[1] + '\n');
-            }*/
+  componentWillMount() {
+    const onAnythingSaid = text => {
+      this.setState({ interimText: text });
+    };
 
-            Axios.post('/authenticate', formData, {
-              headers: {
-                'Content-Type': 'multipart/form-data'
-              }
-            }).then((res) => {
-              console.log(res);
-            }).catch((err) => {
-              console.log(err);
-            });
-          });
-        });
+    const onEndEvent = () => {
+      if (this.state.listening) {
+        this.startListening();
+      }
+    };
+
+    const onFinalised = text => {
+      this.setState({
+        finalisedText: [text, ...this.state.finalisedText],
+        interimText: ''
+      });
+    };
+
+    try {
+      this.listener = new SpeechToText(onFinalised, onEndEvent, onAnythingSaid);
+    } catch (error) {
+      this.setState({ error: error.message });
     }
   }
 
@@ -78,13 +86,16 @@ export default class Voice extends Component {
     const { record, ready } = this.state;
     let contents = "Something went wrong.";
     if (record) {
-      if (ready) {
+      if (this.listener) {
         contents = "Press again to stop recording!"
       } else {
         contents = "Wait for a bit..."
       }
     } else {
       contents = "Press to record your code!";
+    }
+    if (this.state.interimText.length > 0) {
+      contents = this.state.interimText;
     }
     return (
       <div
@@ -103,7 +114,7 @@ export default class Voice extends Component {
           src={mic}
 
         />
-        <Heading style= {{
+        <Heading style={{
           fontSize: "6vw",
           paddingTop: "5vh",
           color: "#FFFFFF"
