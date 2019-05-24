@@ -1,5 +1,7 @@
 import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
+import { StyleSheet, Text, ScrollView, View, TouchableOpacity, Image } from 'react-native';
+import {createStackNavigator, createAppContainer} from 'react-navigation';
+import AtmSelectionChal from './Atmselectionchal';
 
 const styles = StyleSheet.create({
     button1: {
@@ -9,7 +11,7 @@ const styles = StyleSheet.create({
         textTransform: "uppercase",
         height: 100,
         width: 400,
-
+        marginTop: 0
     },
     button2: {
         color: "#307FEA",
@@ -42,6 +44,9 @@ const styles = StyleSheet.create({
     },
     row: {
         position: "relative",
+        flex: 1, 
+        alignItems: "center", 
+        justifyContent: "center",
         padding: 40
     },
     image1: {
@@ -49,13 +54,14 @@ const styles = StyleSheet.create({
         marginBottom: 40
     },
 });
-export default class Visual extends React.Component {
+
+class Visual extends React.Component {
     render()
     {
         return(
-        <React.Fragment>
+        <ScrollView>
             <View style={styles.row}>
-                <TouchableOpacity onPress={this.handlePress}>
+                <TouchableOpacity onPress={() => this.props.navigation.push('Atm')}>
                 <View style={styles.button2}>
                     <Image source={require('./assets/eyeregular.png')} style={styles.image1}>
                     </Image>
@@ -72,9 +78,9 @@ export default class Visual extends React.Component {
                     </Text>
                 </View>
             </View>
-        </React.Fragment>
+        </ScrollView>
         );
     }
-     handlePress = () => {
-    }
 }
+
+export default Visual;

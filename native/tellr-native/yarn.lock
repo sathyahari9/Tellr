@@ -837,6 +837,11 @@
     pouchdb-collections "^1.0.1"
     tiny-queue "^0.2.1"
 
+"@react-native-community/slider@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@react-native-community/slider/-/slider-1.1.2.tgz#a3eaeb7e0c6808c0d34c2dbb25eb855acc67ca1b"
+  integrity sha512-G9jwFzKy4JT/xkpFSlrdSkkQBtuFa0IiivgLPIsSbou54XlkP3uz5LgF7Of2aHQmoB3LqRzkogAZyhiK24+Zww==
+
 "@react-navigation/core@~3.4.1":
   version "3.4.2"
   resolved "https://registry.yarnpkg.com/@react-navigation/core/-/core-3.4.2.tgz#bec563e94fde40fbab3730cdc97f22afbb2a1498"
@@ -4268,6 +4273,11 @@ normalize-path@^2.0.1, normalize-path@^2.1.1:
   integrity sha1-GrKLVW4Zg2Oowab35vogE3/mrtk=
   dependencies:
     remove-trailing-separator "^1.0.1"
+
+nouislider@^13.1.5:
+  version "13.1.5"
+  resolved "https://registry.yarnpkg.com/nouislider/-/nouislider-13.1.5.tgz#3a0f3004159b9a77ebc07c3bedc26c97327d3522"
+  integrity sha512-RZMuNW1Z4PcxC5q7wUKbr5EweCEnEUii3f2XtjS38VWcG5QjN11zvveRld+lrUwHIOKgfRWeIddZm5Xxfr7zCQ==
 
 npm-bundled@^1.0.1:
   version "1.0.6"
