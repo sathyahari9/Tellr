@@ -36,19 +36,18 @@ const styles = StyleSheet.create({
         fontWeight: "bold"
     }
 });
-export default class AtmSelectionChal extends React.Component {
+export default class AtmCardChooser extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            name: 'Press the change button to find location',
-            counter: 0,
-            address: {
-                "state": "VA",
-                "zip": "22207",
-                "city": "Arlington",
-                "street_name": "Lee Highway",
-                "street_number": "4700"
-            }
+            _id: "string",
+            type: "Credit Card",
+            nickname: "string",
+            rewards: 0,
+            balance: 0,
+            account_number: "string",
+            customer_id: "string",
+            counter: 0
         }
     }
     render()
@@ -60,16 +59,12 @@ export default class AtmSelectionChal extends React.Component {
                         <Image source={require('./assets/change.png')} />
                     </View>
                 </TouchableOpacity>
-                <TouchableOpacity onPress={() => this.props.navigation.push('Card')}>
+                <TouchableOpacity onPress={() => this.props.navigation.push('Amount')}>
                     <View style={styles.atm}>
                         <View style={styles.inner}>
-                            <Image style={styles.card} source={require('./assets/atm.png')}/>
+                            <Image style={styles.card} source={require('./assets/creditcard.png')}/>
                             <Text style={styles.atmtext}>
-                                {
-                                this.state.name + ' at ' +
-                                this.state.address.street_number + ' ' + 
-                                this.state.address.street_name + ' ' +
-                                this.state.address.city + ' '}
+                                {"Use " + this.state.type + " with account number " + this.state.nickname}
                             </Text>
                         </View>
                     </View>
@@ -78,29 +73,22 @@ export default class AtmSelectionChal extends React.Component {
         );
     }
     displayAtm = () => {
-        
-        const url = "http://api.reimaginebanking.com/atms?"
-        const lat = "38.9283";
-        const lng = "-77.1753"; 
-        const rad = "3"; 
+        const cust_id = "5ce30e65322fa06b67794ce7";
+        const url = "http://api.reimaginebanking.com/customers/" + cust_id + "/accounts" +"?key=";
         const key = "0a317ccb3fe11979ba8dfe5572000f77";
-        fetch(url+"lat="+lat+"&lng="+lng+"&rad="+rad+"&key="+key)
+        fetch(url+key)
         .then((response) => response.json())
         .then((responseJson) => {
         this.setState({
-            name: responseJson.data[this.state.counter].name, 
+            _id: responseJson[this.state.counter].id,
+            type: responseJson[this.state.counter].type,
+            nickname: responseJson[this.state.counter].nickname,
+            rewards: responseJson[this.state.counter].rewards,
+            balance: responseJson[this.state.counter].balance,
+            account_number: responseJson[this.state.counter].account_number,
+            customer_id: responseJson[this.state.counter].customer_id,
             counter: this.state.counter + 1,
             });
-        let past_address = {
-            "state": responseJson.data[this.state.counter].address.state,
-            "zip": responseJson.data[this.state.counter].address.zip,
-            "city": responseJson.data[this.state.counter].address.city,
-            "street_name": responseJson.data[this.state.counter].address.street_name,
-            "street_number": responseJson.data[this.state.counter].address.street_number
-        };
-        this.setState({
-            address: past_address,
-        });
         })
         .catch((error) => {
         console.error(error);
