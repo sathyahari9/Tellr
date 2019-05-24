@@ -14,8 +14,6 @@ const port = process.env.PORT || 8080;
 
 app.use(express.json());
 app.use(express.static('dist'));
-app.use(bodyParser.json({limit: '200mb'}));
-app.use(bodyParser.urlencoded({limit: '200mb', extended: true}));
 
 // Connect to MongoDB
 const uri = 'mongodb+srv://user-1:9KZSZ3zwmDEYPhxj@cluster0-rsces.mongodb.net/test?retryWrites=true';
@@ -28,7 +26,7 @@ db.on("error", console.error.bind(console, "Connection error:"));
 
 // Submit voice file, authenticate, and complete
 app.put("/authenticate", (req, res) => {
-  res.end(upload.upload(req.body.blob));
+  res.end(actions.upload(req.body.data));
     /*.then(() => {
       transcribe.transcribe(keyName)
         .then(() => {
