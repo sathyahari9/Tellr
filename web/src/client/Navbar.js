@@ -7,7 +7,8 @@ import logo from './assets/logo.png';
 function CustomNav(props) {
     return (
         <Navbar style={{
-            height: "72px"
+            height: "72px",
+            fontSize: "24px"
         }}>
             <Navbar.Brand
             style={{
