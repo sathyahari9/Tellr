@@ -34,6 +34,7 @@ export default class NumPad extends Component {
           this.setState({ display: "Wrong code, please try again" });
         } else {
           this.setState({ display: `You have withdrawn $${amount}!` });
+          this.props.next(amount);
         }
       });
   }
@@ -108,7 +109,7 @@ export default class NumPad extends Component {
                 }}
                 onClick={() => {
                   let { value } = this.state;
-                  if (value.length < 5) {
+                  if (value.length < 6) {
                     this.setState({ value: value + 0 });
                   }
                 }}

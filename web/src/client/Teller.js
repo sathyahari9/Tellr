@@ -23,11 +23,8 @@ export default class Teller extends Component {
   goToVoice = () => {
     this.setState({view: "voice"});
   }
-  postCode = (code) => {
-    let axiosWorks = true;
-    if (axiosWorks) {
-      this.setState({view: "endcard"});
-    }
+  postCode = (amount) => {
+    this.setState({view: "endcard", amount: amount})
   }
   render() {
     switch(this.state.view) {

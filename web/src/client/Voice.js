@@ -19,6 +19,30 @@ export default class Voice extends Component {
     this.initRecorder = this.initRecorder.bind(this);
     this.toggleRecord = this.toggleRecord.bind(this);
     this.handleRecord = this.handleRecord.bind(this);
+    this.handleNext = this.handleNext.bind(this);
+  }
+
+  handleNext(code) {
+    fetch("/authenticate", {
+      method: "POST",
+      headers: {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        data: code
+      })
+    }).then(res => res.json())
+      .then(res => {
+        //const json = JSON.parse(res);
+        let amount = res.amount;
+        console.log(res);
+        if(amount === -1) {
+          this.setState({ interimText: "Wrong code, please try again" });
+        } else {
+          this.props.next(amount);
+        }
+      });
   }
 
   initRecorder = (callback) => {
@@ -57,7 +81,7 @@ export default class Voice extends Component {
         console.log(res);
         JSON.parse(res);
       });
-      this.props.next();
+      this.handleNext(code);
     }
   }
 
