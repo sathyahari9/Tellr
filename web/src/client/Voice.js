@@ -51,7 +51,7 @@ export default class Voice extends Component {
     navigator.mediaDevices.getUserMedia({ audio: true, video: false })
       .then((stream) => {
         recorder.init(stream);
-        this.setState({ ready: true, recorder: recorder });
+        this.setState({ ready: true, recorder: recorder});
         callback(recorder);
       });
   }
@@ -74,13 +74,10 @@ export default class Voice extends Component {
   handleRecord() {
     if (this.state.record) {
       this.listener.startListening()
+      this.setState({interimText: ""});
     } else {
       this.listener.stopListening();
       let code = this.state.interimText.replace(/\s/g, '')
-      Axios.post('/authenticate', {code: code}).then((res) => {
-        console.log(res);
-        JSON.parse(res);
-      });
       this.handleNext(code);
     }
   }
