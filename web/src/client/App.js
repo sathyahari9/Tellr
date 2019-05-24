@@ -37,7 +37,9 @@ export default class App extends Component {
               homeOpen = {this.goToHome}
               appOpen = {this.goToApp}
             />
-            <Static />
+            <Static 
+              appOpen = {this.goToApp}
+            />
           </React.Fragment>
         );
     }
