@@ -25,7 +25,10 @@ db.once("open", () => console.log("Connected to DB."));
 db.on("error", console.error.bind(console, "Connection error:"));
 
 // Submit voice file, authenticate, and complete
-app.post("/authenticate", actions.upload);
+app.post("/authenticate", (req, res) => {
+  ret = User.findOne({code: req.body.code});
+  res.json({ amount: ret.amount });
+});
 
 app.post("/code", (req, res) => {
   let authCode = actions.genCode();
