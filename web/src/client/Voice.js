@@ -38,6 +38,7 @@ export default class Voice extends Component {
     this.setState({ record: !record }, this.handleRecord);
   }
 
+  /*
   blobToBase64(blob, callback) {
     var reader = new FileReader();
     reader.readAsDataURL(blob);
@@ -45,7 +46,7 @@ export default class Voice extends Component {
       let base64 = reader.result;
       callback(base64);
     }
-  }
+  }*/
 
   handleRecord() {
     if (this.state.record) {

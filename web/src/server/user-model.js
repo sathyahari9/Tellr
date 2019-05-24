@@ -5,7 +5,7 @@ var Schema = mongoose.Schema;
 const bcrypt = require("bcrypt");
 const saltRounds = 10;
 var UserSchema = new Schema({
-  userId:   { type: String, required: true, unique: true },
+  userId:   { type: String, unique: true },
   code:     { type: String, unique: true },
   amount:   { type: Number }
 });
