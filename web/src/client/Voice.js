@@ -52,8 +52,11 @@ export default class Voice extends Component {
       this.listener.startListening()
     } else {
       this.listener.stopListening();
-      let code = this.interimText.filter((char) => char !== ' ');
-      
+      let code = this.state.interimText.replace(/\s/g, '')
+      Axios.post('/authenticate', {code: code}).then((res) => {
+        console.log(res);
+        JSON.parse(res);
+      });
     }
   }
 

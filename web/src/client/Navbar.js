@@ -44,7 +44,7 @@ function CustomNav(props) {
                         App
                     </Navbar.Item>
                     <Navbar.Item
-                        onClick={props.aboutOpen} 
+                        href="https://docs.google.com/presentation/d/1VclPJrICicbJ_IQjInOS3poUXgWOLIJ0vhut8qlN3HY/edit?usp=sharing"
                         style={{
                             color: "#307FEA"
                         }}
