@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import './app.css';
 import Recorder from 'recorder-js';
 import Axios from 'axios';
+import mic from './assets/mic.png';
+import { Heading } from 'react-bulma-components';
+import 'react-bulma-components/dist/react-bulma-components.min.css';
 
 export default class Voice extends Component {
   constructor(props) {
@@ -73,16 +76,41 @@ export default class Voice extends Component {
 
   render() {
     const { record, ready } = this.state;
+    let contents = "Something went wrong.";
+    if (record) {
+      if (ready) {
+        contents = "Press again to stop recording!"
+      } else {
+        contents = "Wait for a bit..."
+      }
+    } else {
+      contents = "Press to record your code!";
+    }
     return (
-      <React.Fragment>
-        <button type="button" onClick={this.toggleRecord}>Speak</button>
-        {ready || <h1>Not ready</h1>}
-        {record ? (
-          <h1>Recording</h1>
-        ) : (
-            <h1>Not Recording</h1>
-          )}
-      </React.Fragment>
+      <div
+        onClick={this.toggleRecord}
+        style={{
+          height: "100vh",
+          width: "100vw",
+          backgroundColor: "#307FEA"
+        }}
+      >
+        <img
+          style={{
+            paddingTop: "20vh",
+            width: "20vw"
+          }}
+          src={mic}
+
+        />
+        <Heading style= {{
+          fontSize: "6vw",
+          paddingTop: "5vh",
+          color: "#FFFFFF"
+        }}>
+          {contents}
+        </Heading>
+      </div>
     );
   }
 }

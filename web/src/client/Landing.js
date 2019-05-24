@@ -8,10 +8,12 @@ import slashIcon from './assets/eyeSlashHighRes.png';
 export default class Landing extends Component {
   render() {
     return(
-      <Columns>
+      <Columns style={{paddingBottom: "0%"}}>
         <Columns.Column>
-          <Tile style={{
-            height: "99vh",
+          <Tile 
+          onClick = {this.props.voice}
+          style={{
+            height: "100vh",
             backgroundColor: "#307FEA"
           }}>
             <Heading style={{
@@ -25,7 +27,9 @@ export default class Landing extends Component {
           </Tile>
         </Columns.Column>
         <Columns.Column>
-          <Tile style={{ height: "98vh" }}>
+          <Tile style={{ height: "98vh" }}
+            onClick={this.props.keyPad}
+          >
             <Heading
               style={{
               width: "110%",
