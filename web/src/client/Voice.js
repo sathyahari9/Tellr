@@ -55,6 +55,11 @@ export default class Voice extends Component {
           this.blobToBase64(blob, (base64) => {
             const formData = new FormData();
             formData.append('data', base64);
+
+            /*for (var pair of formData.entries()) {
+              console.log(pair[0]+ ', ' + pair[1] + '\n');
+            }*/
+
             Axios.post('/authenticate', formData, {
               headers: {
                 'Content-Type': 'multipart/form-data'
@@ -83,7 +88,7 @@ export default class Voice extends Component {
     }
     return (
       <div
-        onClick={this.toggleRecord} 
+        onClick={this.toggleRecord}
         style={{
           height: "100vh",
           width: "100vw",
@@ -96,7 +101,7 @@ export default class Voice extends Component {
             width: "20vw"
           }}
           src={mic}
-          
+
         />
         <Heading style= {{
           fontSize: "6vw",
