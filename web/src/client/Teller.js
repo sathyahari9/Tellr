@@ -6,6 +6,7 @@ import eyeIcon from './assets/eyeHighRes.png';
 import slashIcon from './assets/eyeSlashHighRes.png';
 import NumPad from './Numpad.js';
 import Landing from './Landing.js';
+import Voice from './Voice.js';
 
 export default class Teller extends Component {
   constructor(props) {
@@ -13,13 +14,33 @@ export default class Teller extends Component {
     this.state = {
       view: "landing"
     }
+    this.goToKeyPad = this.goToKeyPad.bind(this);
+    this.goToResult = this.goToResult.bind(this);
+    this.goToVoice = this.goToVoice.bind(this);
   }
+  goToKeyPad = () => {
+    this.setState({view: "keypad"});
+  }
+  goToVoice = () => {
+    this.setState({view: "voice"});
+  }
+  goToResult = () => {
+    this.setState({view: "endcard"});
+  }
+
   render() {
     switch(this.state.view) {
       case "keypad":
         return (<NumPad />);
+      case "voice":
+        return (<Voice />);
+      case "endcard":
+        return(<h1>YAYAYAYAYAY</h1>);
       default:
-        return (<Landing />);
+        return (<Landing 
+          keyPad={this.goToKeyPad}
+          voice={this.goToVoice}
+        />);
     }
   }
 }

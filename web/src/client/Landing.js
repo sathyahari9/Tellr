@@ -10,7 +10,9 @@ export default class Landing extends Component {
     return(
       <Columns>
         <Columns.Column>
-          <Tile style={{
+          <Tile 
+          onClick = {this.props.keyPad}
+          style={{
             height: "99vh",
             backgroundColor: "#307FEA"
           }}>
@@ -25,7 +27,9 @@ export default class Landing extends Component {
           </Tile>
         </Columns.Column>
         <Columns.Column>
-          <Tile style={{ height: "98vh" }}>
+          <Tile style={{ height: "98vh" }}
+            onClick={this.props.voice}
+          >
             <Heading
               style={{
               width: "110%",
