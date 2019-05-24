@@ -28,7 +28,7 @@ public class DisabilitySelection extends AppCompatActivity implements LocationLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_disablity);
         dyslexia = findViewById(R.id.dyslexia_button);
-        readOutLoud = findViewById(R.id.read_out_loud_button);
+        readOutLoud = findViewById(R.id.night_mode_button);
         largeText = findViewById(R.id.large_text_button);
         none_ = findViewById(R.id.none_button);
         dyslexia.setOnClickListener(new View.OnClickListener() {

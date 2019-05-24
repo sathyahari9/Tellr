@@ -7,8 +7,8 @@
     tools:context=".DisabilitySelection">
 
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="380dp"
+        android:layout_height="707dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
@@ -22,33 +22,30 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <Button
-            android:id="@+id/dyslexia_button"
+        <ImageView
+            android:id="@+id/nonDIsabled"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:text="Dyslexia" />
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/nondisabled_btn" />
 
-        <Button
-            android:id="@+id/read_out_loud_button"
+        <ImageView
+            android:id="@+id/nightMode"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:text="Read outloud" />
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/nightmode_btn" />
 
-        <Button
-            android:id="@+id/large_text_button"
+        <ImageView
+            android:id="@+id/imageView5"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:text="large text" />
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bluefilt_btn" />
 
-        <Button
-            android:id="@+id/none_button"
+        <ImageView
+            android:id="@+id/imageView6"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:text="None" />
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/dyslexia_btn" />
+
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
