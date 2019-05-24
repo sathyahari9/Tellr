@@ -29,10 +29,7 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['*', '.js', '.jsx'],
-    alias: {
-      '_variables.sass': path.resolve(__dirname, './src/client/_variable.sass'),
-    }
+    extensions: ['*', '.js', '.jsx']
   },
   devServer: {
     port: 3000,
