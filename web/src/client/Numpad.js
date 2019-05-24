@@ -9,11 +9,37 @@ export default class NumPad extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: "Enter access code"
+      value: "Enter access code",
+      display: ""
     }
+    this.handleNext = this.handleNext.bind(this);
   }
+
+  handleNext() {
+    fetch("/authenticate", {
+      method: "POST",
+      headers: {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        data: this.state.value
+      })
+    }).then(res => res.json())
+      .then(res => {
+        //const json = JSON.parse(res);
+        let amount = res.amount;
+        console.log(res);
+        if(amount === -1) {
+          this.setState({ display: "Wrong code, please try again" });
+        } else {
+          this.setState({ display: `You have withdrawn $${amount}!` });
+        }
+      });
+  }
+
   render() {
-    let { value } = this.state;
+    let { value, display } = this.state;
     return (
       <React.Fragment>
         <Heading style={{
@@ -49,7 +75,7 @@ export default class NumPad extends Component {
                             if (value === "Enter access code") {
                               this.setState({value: "" + num});
                             }
-                            else if (value.length < 4) {
+                            else if (value.length < 5) {
                               this.setState({ value: value + num });
                             }
                           }}
@@ -82,7 +108,7 @@ export default class NumPad extends Component {
                 }}
                 onClick={() => {
                   let { value } = this.state;
-                  if (value.length < 4) {
+                  if (value.length < 5) {
                     this.setState({ value: value + 0 });
                   }
                 }}
@@ -116,15 +142,20 @@ export default class NumPad extends Component {
             </Button>
             </Columns.Column>
             <Columns.Column>
-              <Button 
+              <Button
                 rounded style={{ height: "8vw", backgroundColor: "#307FEA", width: "13vw" }}
-                onClick={() => this.props.next(value)}
+                onClick={this.handleNext}
               >
                 <Heading style={{ color: "#FFFFFF", fontSize: "3vw"}}>Next 🡒</Heading>
               </Button>
             </Columns.Column>
           </Columns>
         </Container>
+        {(display !== "") &&
+          <div>
+            {display}
+          </div>
+        }
       </React.Fragment>
     );
   }

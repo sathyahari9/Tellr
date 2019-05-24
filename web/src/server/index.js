@@ -46,11 +46,6 @@ app.post("/authenticate", (req, res) => {
 
 app.post("/code", (req, res) => {
   let authCode = actions.genCode();
-  //let query = User.find({ code: authCode });
-  /*while (query.length) {
-    authCode = actions.genCode();
-    query = User.find({ code: authCode });
-  }*/
   let userId = req.body.userId;
   User.findOneAndUpdate(
     { userId: userId },
