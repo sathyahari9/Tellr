@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Tile, Heading, Image, Columns, Button } from 'react-bulma-components';
-import converter from 'number-to-words';
+//import converter from 'number-to-words';
 import 'react-bulma-components/dist/react-bulma-components.min.css';
 import './app.css';
 import money from './assets/money.png';
@@ -14,7 +14,7 @@ export default class Landing extends Component {
       <div style={{height: "100vh", width: "99.9vw", backgroundColor: "#307FEA", overflow: "hidden"}}>
         <Columns style={{width: "100vw"}}>
           <Columns.Column>
-            <img 
+            <img
               style={{
                 marginTop: "4vw",
                 width: "20vw"
@@ -31,9 +31,9 @@ export default class Landing extends Component {
               <br />
               Thank you for banking with us!
             </Heading>
-            <Button 
+            <Button
               onClick={this.props.goHome}
-              rounded 
+              rounded
               style={{height: "6vw", width:"14vw", borderColor: "#307FEA"}}>
                 <Heading style={{color:"#307FEA"}}>GO BACK</Heading>
               </Button>

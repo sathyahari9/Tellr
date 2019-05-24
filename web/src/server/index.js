@@ -26,21 +26,36 @@ db.on("error", console.error.bind(console, "Connection error:"));
 
 // Submit voice file, authenticate, and complete
 app.post("/authenticate", (req, res) => {
-  ret = User.findOne({code: req.body.code});
-  res.json({ amount: ret.amount });
+  const query = User.where({
+    code: req.body.data
+  });
+  query.findOne((err, obj) => {
+    if(err) {
+      console.log(err);
+      res.send({ amount: null });
+      return;
+    }
+    if(obj) {
+      res.send({ amount: obj.amount });
+      return;
+    } else {
+      res.send({ amount: -1 });
+    }
+  });
 });
 
 app.post("/code", (req, res) => {
   let authCode = actions.genCode();
-  let query = User.find({ code: authCode });
-  while (!!query.length) {
+  //let query = User.find({ code: authCode });
+  /*while (query.length) {
     authCode = actions.genCode();
     query = User.find({ code: authCode });
-  }
+  }*/
+  let userId = req.body.userId;
   User.findOneAndUpdate(
-    { userId: userID },
+    { userId: userId },
     {
-      userId: userID,
+      userId: userId,
       code: authCode,
       amount: req.body.amount
     },
