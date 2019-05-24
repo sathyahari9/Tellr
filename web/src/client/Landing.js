@@ -46,7 +46,7 @@ export default class Landing extends Component {
                 <Heading style={{color:"#FFFFFF"}}>ENGLISH</Heading>
               </Button>
               <br/>
-              <Button rounded style={{height: "4rem", width:"20vw", marginTop: "2vh"}}>
+              <Button rounded style={{height: "4rem", width:"20vw", marginTop: "2vh", borderColor: "#307FEA"}}>
                 <Heading style={{color:"#307FEA"}}>OTHER</Heading>
               </Button>
           </div>

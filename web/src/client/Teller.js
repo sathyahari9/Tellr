@@ -4,16 +4,18 @@ import './app.css';
 import NumPad from './Numpad.js';
 import Landing from './Landing.js';
 import Voice from './Voice.js';
+import Endcard from './Endcard.js'
 
 export default class Teller extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      view: "landing"
+      view: "landing",
+      amount: 0
     }
     this.goToKeyPad = this.goToKeyPad.bind(this);
-    this.goToResult = this.goToResult.bind(this);
     this.goToVoice = this.goToVoice.bind(this);
+    this.postCode = this.postCode.bind(this);
   }
   goToKeyPad = () => {
     this.setState({view: "keypad"});
@@ -21,18 +23,26 @@ export default class Teller extends Component {
   goToVoice = () => {
     this.setState({view: "voice"});
   }
-  goToResult = () => {
-    this.setState({view: "endcard"});
+  postCode = (code) => {
+    let axiosWorks = true;
+    if (axiosWorks) {
+      this.setState({view: "endcard"});
+    }
   }
-
   render() {
     switch(this.state.view) {
       case "keypad":
-        return (<NumPad />);
+        return (
+        <NumPad 
+          next={this.postCode}
+        />);
       case "voice":
         return (<Voice />);
       case "endcard":
-        return(<h1>YAYAYAYAYAY</h1>);
+        return(<Endcard
+          goHome={this.props.goHome}
+          amount={this.state.amount} 
+          />);
       default:
         return (<Landing 
           keyPad={this.goToKeyPad}
