@@ -19,7 +19,6 @@ export default class Voice extends Component {
     this.initRecorder = this.initRecorder.bind(this);
     this.toggleRecord = this.toggleRecord.bind(this);
     this.handleRecord = this.handleRecord.bind(this);
-    this.blobToBase64 = this.blobToBase64.bind(this);
   }
 
   initRecorder = (callback) => {
@@ -58,6 +57,7 @@ export default class Voice extends Component {
         console.log(res);
         JSON.parse(res);
       });
+      this.props.next();
     }
   }
 

@@ -11,7 +11,7 @@ export default class Teller extends Component {
     super(props);
     this.state = {
       view: "landing",
-      amount: 0
+      amount: 200
     }
     this.goToKeyPad = this.goToKeyPad.bind(this);
     this.goToVoice = this.goToVoice.bind(this);
@@ -37,7 +37,9 @@ export default class Teller extends Component {
           next={this.postCode}
         />);
       case "voice":
-        return (<Voice />);
+        return (<Voice 
+          next={this.postCode}
+        />);
       case "endcard":
         return(<Endcard
           goHome={this.props.goHome}

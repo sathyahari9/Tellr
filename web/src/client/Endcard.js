@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Tile, Heading, Image, Columns, Button } from 'react-bulma-components';
-//import converter from 'number-to-words';
+import converter from 'number-to-words';
 import 'react-bulma-components/dist/react-bulma-components.min.css';
 import './app.css';
 import money from './assets/money.png';
