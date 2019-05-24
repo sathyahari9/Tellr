@@ -23,7 +23,9 @@
     "path": "^0.12.7",
     "querystring": "^0.2.0",
     "react": "^16.5.2",
+    "react-bulma-components": "^2.3.0",
     "react-dom": "^16.5.2",
+    "react-numpad": "^4.1.2",
     "recorder-js": "^1.0.7",
     "request": "^2.88.0",
     "uuid": "^3.3.2"
