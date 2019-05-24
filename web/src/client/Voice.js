@@ -14,6 +14,7 @@ export default class Voice extends Component {
     this.initRecorder = this.initRecorder.bind(this);
     this.toggleRecord = this.toggleRecord.bind(this);
     this.handleRecord = this.handleRecord.bind(this);
+    this.blobToBase64 = this.blobToBase64.bind(this);
   }
 
   initRecorder = (callback) => {
@@ -34,12 +35,11 @@ export default class Voice extends Component {
 
  blobToBase64(blob, callback) {
    var reader = new FileReader();
-   reader.onload = function() {
-     var dataUrl = reader.result;
-     var base64 = dataUrl.split(',')[1];
-     callback(base64);
-   };
    reader.readAsDataURL(blob);
+   reader.onloadend = function() {
+     let base64 = reader.result;
+     callback(base64);
+   }
  }
 
   handleRecord() {
@@ -49,11 +49,18 @@ export default class Voice extends Component {
     } else {
       recorder.stop()
         .then(({ blob }) => {
-          blobToBase64(blob, (base64) => {
-            Axios.put('/authenticate', base64)
-              .then((res) => {
-                console.log(res);
-              });
+          this.blobToBase64(blob, (base64) => {
+            const formData = new FormData();
+            formData.append('data', base64);
+            Axios.post('/authenticate', formData, {
+              headers: {
+                'Content-Type': 'multipart/form-data'
+              }
+            }).then((res) => {
+              console.log(res);
+            }).catch((err) => {
+              console.log(err);
+            });
           });
         });
     }

@@ -25,15 +25,7 @@ db.once("open", () => console.log("Connected to DB."));
 db.on("error", console.error.bind(console, "Connection error:"));
 
 // Submit voice file, authenticate, and complete
-app.put("/authenticate", (req, res) => {
-  res.end(actions.upload(req.body.data));
-    /*.then(() => {
-      transcribe.transcribe(keyName)
-        .then(() => {
-
-        });
-    });*/
-});
+app.post("/authenticate", actions.upload);
 
 app.post("/code", (req, res) => {
   let authCode = actions.genCode();

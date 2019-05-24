@@ -3,6 +3,7 @@ import './app.css';
 import Navbar from './Navbar.js';
 import Teller from './Teller.js';
 import Static from './Static.js';
+import Voice from './Voice.js';
 
 export default class App extends Component {
   constructor(props) {
@@ -31,6 +32,7 @@ export default class App extends Component {
               homeOpen = {this.goToHome}
               appOpen = {this.goToApp}
             />
+            <Voice />
             <Teller />
           </React.Fragment>
         );
@@ -45,6 +47,6 @@ export default class App extends Component {
           </React.Fragment>
         );
     }
-    
+
   }
 }
