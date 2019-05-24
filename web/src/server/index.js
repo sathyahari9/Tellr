@@ -3,11 +3,8 @@ const path = require("path");
 const querystring = require("querystring");
 const request = require("request");
 const bodyParser = require("body-parser");
-
 const mongoose = require("mongoose");
 const actions = require("./actions");
-const upload = require("./upload");
-//const transcribe = require("./transcribe");
 var User = require("./user-model");
 
 const userID = "";
@@ -17,7 +14,8 @@ const port = process.env.PORT || 8080;
 
 app.use(express.json());
 app.use(express.static('dist'));
-app.use(bodyParser());
+app.use(bodyParser.json({limit: '200mb'}));
+app.use(bodyParser.urlencoded({limit: '200mb', extended: true}));
 
 // Connect to MongoDB
 const uri = 'mongodb+srv://user-1:9KZSZ3zwmDEYPhxj@cluster0-rsces.mongodb.net/test?retryWrites=true';
@@ -30,9 +28,9 @@ db.on("error", console.error.bind(console, "Connection error:"));
 
 // Submit voice file, authenticate, and complete
 app.put("/authenticate", (req, res) => {
-  res.end(upload(req.body.blob));
+  res.end(upload.upload(req.body.blob));
     /*.then(() => {
-      transcribe(keyName)
+      transcribe.transcribe(keyName)
         .then(() => {
 
         });

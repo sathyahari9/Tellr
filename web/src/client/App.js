@@ -14,6 +14,7 @@ export default class App extends Component {
     this.initRecorder = this.initRecorder.bind(this);
     this.toggleRecord = this.toggleRecord.bind(this);
     this.handleRecord = this.handleRecord.bind(this);
+    this.blobToBase64 = this.blobToBase64.bind(this);
   }
 
   initRecorder = (callback) => {
@@ -49,7 +50,7 @@ export default class App extends Component {
     } else {
       recorder.stop()
         .then(({ blob }) => {
-          blobToBase64(blob, (base64) => {
+          this.blobToBase64(blob, (base64) => {
             Axios.put('/authenticate', base64)
               .then((res) => {
                 console.log(res);
